@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./library.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src= 
+       "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+    <title>Home | easyUI</title>
+</head>
+
+<body id="top">
+    <div class="container">
+        <nav class="topbar">
+            <ul class="nav-list justify-content-space-between align-items-center">
+                <li class="nav-item"><a href="#top" class="nav-link text-light">Home</a></li>
+                <li class="nav-item text-light">
+                    <a href="#top" class="sitename">
+                        <h1>easy<span style="color:#89ABE3FF;">UI</span></h1>
+                    </a>
+                </li>
+                <div class="d-flex">
+                    <li class="nav-item text-light version">v1.0</li>
+                    <li class="nav-item"><a href="https://github.com/asmitzz/easyUI" target="_blank" class="nav-link"><i
+                    class="fab fa-github text-light"></i></a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="sidebar">
+            <ul class="sidebar-items">
+                <li class="sidebar-item">
+                    <a href="#top" class="sidebar-item-link">Introduction</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#avatar" class="sidebar-item-link">Avatars</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#alert">Alerts</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#badge">Badges</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#button">Buttons</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#image">Images</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#cards">Cards</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#forms">Forms</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#lists">Lists</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#navigation">Navigation</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#modal">Modal</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#rating">Rating</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#grid">Grids</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#text-utilities">Text-utilities</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-item-link" href="#toast">Toast/Snackbar</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <!-- Start -->
+
+            <section id="intro">
+                <h1 class="mt-1">Getting Started</h1>
+                <p class="mt-1">Add the library by including the CSS and JavaScript files from CDN</p>
+                <h2 class="mt-1">CSS</h2>
+
+                <p>Copy-paste the stylesheet <span style="color:#89ABE3FF">&lt;link></span> into your <span
+                        style="color:#89ABE3FF">&lt;head></span> before all other stylesheets to load our CSS.</p>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Feasy-ui.netlify.app%252Flibrary.css%2522%252F%253E"
+                    " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+                <h2 class="mt-1">JS</h2>
+                <p>
+                    Place the following <span style="color:#89ABE3FF">&lt;script&gt;</span>s near the end of your pages,
+                    right before the closing <span style="color:#89ABE3FF">&lt;/body&gt;</span> tag
+                </p>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cscript%2520src%253D%2522https%253A%252F%252Feasy-ui.netlify.app%252Findex.js%2522%253E%253C%252Fscript%253E"
+                    " class="iframe-container"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            <!-- Start -->
+
+            <h1 class="mt-2">Components</h1>
+
+            <!-- Avatar -->
+            <section id="avatar" class="mt-1">
+
+                <div class="code-container">
+                    <h2 class="component-title">Avatars</h2>
+                    <a class="avatar">
+                        <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                            alt="avatar" class="avatar-img" />
+                    </a>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2850%2C82%2C109%2C1%29&t=night-owl&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fimage.freepik.com%252Ffree-vector%252Fbusinessman-character-avatar-isolated_24877-%2520%2520%2520%2520%2520%2520%2520%252060111.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%253C%252Fa%253E"
+                        class="iframe-container"  sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+
+                    <h2>Rounded Avatar</h2>
+                    <a class="avatar rounded">
+                        <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                            alt="avatar" class="avatar-img" />
+                    </a>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2850%2C82%2C109%2C1%29&t=night-owl&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520class%253D%2522avatar%2520rounded%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fimage.freepik.com%252Ffree-vector%252Fbusinessman-character-avatar-isolated_24877-%252060111.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%253C%252Fa%253E"
+                         class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Avatar with differet sizes</h2>
+
+                    <div class="avatar-container">
+                        <a class="avatar avatar-xs rounded">
+                            <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                alt="avatar" class="avatar-img" />
+                        </a>
+
+                        <a class="avatar avatar-sm rounded">
+                            <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                alt="avatar" class="avatar-img" />
+                        </a>
+
+                        <a class="avatar avatar-md rounded">
+                            <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                alt="avatar" class="avatar-img" />
+                        </a>
+
+                        <a class="avatar avatar-lg rounded">
+                            <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                alt="avatar" class="avatar-img" />
+                        </a>
+
+                        <a class="avatar avatar-xl rounded">
+                            <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                alt="avatar" class="avatar-img" />
+                        </a>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2850%2C82%2C109%2C1%29&t=night-owl&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Ca%2520class%253D%2522avatar%2520avatar-xs%2520rounded%2522%253E%250A%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fimage.freepik.com%252Ffree-vector%252Fbusinessman-character-avatar-isolated_24877-60111.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%2520%253C%252Fa%253E%250A%250A%2520%253Ca%2520class%253D%2522avatar%2520avatar-sm%2520rounded%2522%253E%250A%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fimage.freepik.com%252Ffree-vector%252Fbusinessman-character-avatar-isolated_24877-60111.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%2520%253C%252Fa%253E%250A%250A%2520%253Ca%2520class%253D%2522avatar%2520avatar-md%2520rounded%2522%253E%250A%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fimage.freepik.com%252Ffree-vector%252Fbusinessman-character-avatar-isolated_24877-60111.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%2520%253C%252Fa%253E%250A%250A%2520%253Ca%2520class%253D%2522avatar%2520avatar-lg%2520rounded%2522%253E%250A%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fimage.freepik.com%252Ffree-vector%252Fbusinessman-character-avatar-isolated_24877-60111.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%2520%253C%252Fa%253E%250A%250A%2520%253Ca%2520class%253D%2522avatar%2520avatar-xl%2520rounded%2522%253E%250A%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fimage.freepik.com%252Ffree-vector%252Fbusinessman-character-avatar-isolated_24877-60111.jpg%2522%2520alt%253D%2522avatar%2522%252F%253E%250A%2520%253C%252Fa%253E"
+                        class="iframe-container"  sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+
+                    <h2>Avatar group</h2>
+                    <div class="avatar-group">
+                        <a class="avatar avatar-md rounded">
+                            <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                alt="avatar" class="avatar-img" />
+                        </a>
+                        <a class="avatar avatar-md rounded">
+                            <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                alt="avatar" class="avatar-img" />
+                        </a>
+                        <a class="avatar avatar-md rounded">
+                            <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                alt="avatar" class="avatar-img" />
+                        </a>
+                        <a class="avatar avatar-md rounded">
+                            <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                alt="avatar" class="avatar-img" />
+                        </a>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2850%2C82%2C109%2C1%29&t=night-owl&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-group%2522%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2520avatar-md%2520rounded%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fimage.freepik.com%252Ffree-vector%252Fbusinessman-character-avatar-isolated_24877-%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252060111.jpg%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2520avatar-md%2520rounded%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fimage.freepik.com%252Ffree-vector%252Fbusinessman-character-avatar-isolated_24877-%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252060111.jpg%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2520avatar-md%2520rounded%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fimage.freepik.com%252Ffree-vector%252Fbusinessman-character-avatar-isolated_24877-%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252060111.jpg%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2520avatar-md%2520rounded%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fimage.freepik.com%252Ffree-vector%252Fbusinessman-character-avatar-isolated_24877-%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252060111.jpg%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E"
+                        class="iframe-container"  sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+            </section>
+            <!-- Avatar -->
+
+            <!-- Alert -->
+            <section id="alert">
+
+                <div class="code-container">
+                    <div>
+                        <h2 class="component-title">Alerts</h2>
+                        <div class="alert">
+                            <strong>Default</strong>!!</strong> this is a default alert
+                        </div>
+
+                        <div class="alert alert-primary">
+                            <strong>Primary!!</strong> this is a Primary alert
+                        </div>
+
+                        <div class="alert alert-success">
+                            <strong>Success!!</strong> this is a Success alert
+                        </div>
+
+                        <div class="alert alert-secondary">
+                            <strong>Secondary!!</strong> this is a Secondary alert
+                        </div>
+
+                        <div class="alert alert-danger">
+                            <strong>Danger!!</strong> this is a Danger alert
+                        </div>
+
+                        <div class="alert alert-info">
+                            <strong>Info!!</strong> this is a info alert
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <strong>Warning!!</strong> this is a Warning alert
+                        </div>
+
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2850%2C82%2C109%2C1%29&t=night-owl&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EDefault%253C%252Fstrong%253E%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520default%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EPrimary%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520Primary%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253ESuccess%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520Success%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253ESecondary%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520Secondary%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EDanger%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520Danger%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EInfo%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520info%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EWarning%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520Warning%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+                            class="iframe-container"  sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="code-container">
+                    <div>
+                        <h2>Dismissing alerts</h2>
+                        <div class="alert">
+                            <strong>Default</strong>!!</strong> this is a default alert
+                            <button type="button" class="dismiss-alert">x</button>
+                        </div>
+
+                        <div class="alert alert-primary">
+                            <strong>Primary!!</strong> this is a Primary alert
+                            <button type="button" class="dismiss-alert">x</button>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <strong>Success!!</strong> this is a Success alert
+                            <button type="button" class="dismiss-alert">x</button>
+                        </div>
+
+                        <div class="alert alert-secondary">
+                            <strong>Secondary!!</strong> this is a Secondary alert
+                            <button type="button" class="dismiss-alert">x</button>
+                        </div>
+
+                        <div class="alert alert-danger">
+                            <strong>Danger!!</strong> this is a Danger alert
+                            <button type="button" class="dismiss-alert">x</button>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <strong>Info!!</strong> this is a info alert
+                            <button type="button" class="dismiss-alert">x</button>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <strong>Warning!!</strong> this is a Warning alert
+                            <button type="button" class="dismiss-alert">x</button>
+                        </div>
+
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2850%2C82%2C109%2C1%29&t=night-owl&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EDefault%253C%252Fstrong%253E%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520default%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522dismiss-alert%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EPrimary%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520Primary%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522dismiss-alert%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253ESuccess%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520Success%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522dismiss-alert%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253ESecondary%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520Secondary%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522dismiss-alert%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EDanger%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520Danger%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522dismiss-alert%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EInfo%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520info%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522dismiss-alert%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EWarning%21%21%253C%252Fstrong%253E%2520this%2520is%2520a%2520Warning%2520alert%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522dismiss-alert%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+                            " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Alert -->
+
+            <!-- Badges -->
+            <section id="badge">
+
+                <div class="code-container">
+                    <h2 class="component-title">Badges</h2>
+                    <div class="badge-container">
+                        <div class="badge">
+                            <button type="button" class="btn btn-default">
+                                Notifications<span class="default-badge badge-success">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-primary">
+                                Notifications<span class="default-badge badge-secondary">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-success">
+                                Notifications<span class="default-badge badge-info">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-secondary">
+                                Notifications<span class="default-badge badge-danger">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-danger">
+                                Notifications<span class="default-badge badge-primary">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-info">
+                                Notifications<span class="default-badge badge-warning">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-warning">
+                                Notifications<span class="default-badge badge-default">23</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2850%2C82%2C109%2C1%29&t=night-owl&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-default%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522default-badge%2520badge-success%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522default-badge%2520badge-secondary%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-success%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522default-badge%2520badge-info%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522default-badge%2520badge-danger%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-danger%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522default-badge%2520badge-primary%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-info%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522default-badge%2520badge-warning%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-warning%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522default-badge%2520badge-default%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Floating badges</h2>
+                    <div class="badge-container">
+                        <div class="badge">
+                            <button type="button" class="btn btn-default">
+                                Notifications<span class="badge-float ">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-primary">
+                                Notifications<span class="badge-float  badge-secondary">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-success">
+                                Notifications<span class="badge-float badge-info">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-secondary">
+                                Notifications<span class="badge-float badge-success">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-danger">
+                                Notifications<span class="badge-float badge-warning">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-info">
+                                Notifications<span class="badge-float badge-default">23</span>
+                            </button>
+                        </div>
+
+                        <div class="badge">
+                            <button type="button" class="btn btn-warning">
+                                Notifications<span class="badge-float badge-danger">23</span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-default%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522badge-float%2520%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522badge-float%2520%2520badge-secondary%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522badge-float%2520badge-info%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522badge-float%2520badge-success%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522badge-float%2520badge-warning%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522badge-float%2520badge-default%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Notifications%253Cspan%2520class%253D%2522badge-float%2520badge-danger%2522%253E23%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+
+                    <h2>Badge on Icons</h2>
+                    <div class="badge-container">
+                        <div class="badge text-danger">
+                            <i class="fa fa-phone">
+                                <span class="badge-float">2</span>
+                            </i>
+                        </div>
+                        <div class="badge text-success">
+                            <i class="fa fa-bell">
+                                <span class="badge-float badge-success">2</span>
+                            </i>
+                        </div>
+                        <div class="badge text-default">
+                            <i class="fa fa-shopping-cart">
+                                <span class="badge-float badge-primary">2</span>
+                            </i>
+                        </div>
+                        <div class="badge text-info">
+                            <i class="fas fa-comment-alt">
+                                <span class="badge-float badge-info">2</span>
+                            </i>
+                        </div>
+                        <div class="badge text-warning">
+                            <i class="fa fa-user">
+                                <span class="badge-float badge-warning">2</span>
+                            </i>
+                        </div>
+                        <div class="badge text-secondary">
+                            <i class="fa fa-tag">
+                                <span class="badge-float badge-default">2</span>
+                            </i>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520text-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-phone%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-float%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520text-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-bell%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-float%2520badge-success%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520text-default%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-shopping-cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-float%2520badge-primary%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520text-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-comment-alt%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-float%2520badge-info%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520text-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-user%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-float%2520badge-warning%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520text-secondary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-tag%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-float%2520badge-default%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Badges on Avatar</h2>
+                    <div class="badge-container">
+                        <div class="badge">
+                            <span class="badge-float">Profile</span>
+                            <a class="avatar">
+                                <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                    alt="avatar" class="avatar-img" />
+                            </a>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-float badge-success">Edit</span>
+                            <a class="avatar avatar-sm rounded">
+                                <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                    alt="avatar" class="avatar-img" />
+                            </a>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-float badge-primary">online</span>
+                            <a class="avatar avatar-md rounded">
+                                <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                    alt="avatar" class="avatar-img" />
+                            </a>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-float badge-info">Sold out</span>
+                            <a class="avatar avatar-lg rounded">
+                                <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                    alt="avatar" class="avatar-img" />
+                            </a>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-float badge-warning">Exclusive</span>
+                            <a class="avatar avatar-xl rounded">
+                                <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                    alt="avatar" class="avatar-img" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-float%2522%253EProfile%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-float%2520badge-success%2522%253EEdit%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2520avatar-sm%2520rounded%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-float%2520badge-primary%2522%253Eonline%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2520avatar-md%2520rounded%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-float%2520badge-info%2522%253ESold%2520out%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2520avatar-lg%2520rounded%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-float%2520badge-warning%2522%253EExclusive%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2520avatar-xl%2520rounded%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+
+                </div>
+
+                <div class="code-container">
+                    <h2>Avatar with online badge</h1>
+                        <div class="badge-container">
+                            <div class="badge">
+                                <span class="badge-avatar-online"></span>
+                                <a class="avatar avatar-xl ">
+                                    <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                        alt="avatar" class="avatar-img" />
+                                </a>
+                            </div>
+                            <div class="badge">
+                                <span class="badge-avatar-online badge-danger"></span>
+                                <a class="avatar avatar-xl ">
+                                    <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                        alt="avatar" class="avatar-img" />
+                                </a>
+                            </div>
+                            <div class="badge">
+                                <span class="badge-avatar-online badge-success">2m</span>
+                                <a class="avatar avatar-xl rounded">
+                                    <img src="https://image.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg"
+                                        alt="avatar" class="avatar-img" />
+                                </a>
+                            </div>
+
+                        </div>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-avatar-online%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2520avatar-xl%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-avatar-online%2520badge-danger%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2520avatar-xl%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-avatar-online%2520badge-success%2522%253E2m%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522avatar%2520avatar-xl%2520rounded%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%253C%252Fdiv%253E"
+                            " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                </div>
+            </section>
+            <!-- Badges -->
+
+            <!-- Buttons -->
+            <section id="button">
+
+                <div class="code-container">
+                    <h2 class="component-title">Primary Buttons</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-primary">Primary button</button>
+                        <button class="btn btn-success">Success button</button>
+                        <button class="btn btn-danger">Danger button</button>
+                        <button class="btn btn-warning">Warning button</button>
+                        <button class="btn btn-secondary">secondary button</button>
+                        <button class="btn btn-info">info button</button>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%2520button%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%2520button%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%2520button%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%2520button%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253Esecondary%2520button%253C%252Fbutton%253E%250A%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-info%2522%253Einfo%2520button%253C%252Fbutton%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Secondary buttons</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-outline-primary">Primary button</button>
+                        <button class="btn btn-outline-success">Success button</button>
+                        <button class="btn btn-outline-danger">Danger button</button>
+                        <button class="btn btn-outline-warning">Warning button</button>
+                        <button class="btn btn-outline-secondary">secondary button</button>
+                        <button class="btn btn-outline-info">info button</button>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary%2520button%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-success%2522%253ESuccess%2520button%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-danger%2522%253EDanger%2520button%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-warning%2522%253EWarning%2520button%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253Esecondary%2520button%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-info%2522%253Einfo%2520button%253C%252Fbutton%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Dropdown Buttons</h2>
+
+                    <div class="btn-container">
+
+                        <select class="dropdown dropdown-primary">
+                            <option>Primary</option>
+                            <option>link1</option>
+                            <option>link2</option>
+                            <option>link3</option>
+                        </select>
+
+                        <select class="dropdown dropdown-success">
+                            <option>Success</option>
+                            <option>link1</option>
+                            <option>link2</option>
+                            <option>link3</option>
+                        </select>
+
+                        <select class="dropdown dropdown-danger">
+                            <option>danger</option>
+                            <option>link1</option>
+                            <option>link2</option>
+                            <option>link3</option>
+                        </select>
+
+                        <select class="dropdown dropdown-info">
+                            <option>info</option>
+                            <option>link1</option>
+                            <option>link2</option>
+                            <option>link3</option>
+                        </select>
+
+                        <select class="dropdown dropdown-secondary">
+                            <option>secondary</option>
+                            <option>link1</option>
+                            <option>link2</option>
+                            <option>link3</option>
+                        </select>
+
+                        <select class="dropdown dropdown-warning">
+                            <option>warning</option>
+                            <option>link1</option>
+                            <option>link2</option>
+                            <option>link3</option>
+                        </select>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cselect%2520class%253D%2522dropdown%2520dropdown-primary%2522%253E%250A%2520%2520%2520%2520%253Coption%253EPrimary%253C%252Foption%253E%250A%2520%2520%2520%253Coption%253Elink1%253C%252Foption%253E%250A%2520%2520%2520%253Coption%253Elink2%253C%252Foption%253E%250A%2520%2520%2520%253Coption%253Elink3%253C%252Foption%253E%250A%2520%2520%253C%252Fselect%253E%250A%250A%2520%2520%253Cselect%2520class%253D%2522dropdown%2520dropdown-success%2522%253E%250A%2520%2520%2520%2520%2520%253Coption%253ESuccess%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%253Coption%253Elink1%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%253Coption%253Elink2%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%253Coption%253Elink3%253C%252Foption%253E%250A%2520%2520%253C%252Fselect%253E%250A%250A%2520%2520%253Cselect%2520class%253D%2522dropdown%2520dropdown-danger%2522%253E%250A%2520%2520%2520%253Coption%253Edanger%253C%252Foption%253E%250A%2520%2520%253Coption%253Elink1%253C%252Foption%253E%250A%2520%2520%253Coption%253Elink2%253C%252Foption%253E%250A%2520%2520%253Coption%253Elink3%253C%252Foption%253E%250A%2520%253C%252Fselect%253E%250A%250A%2520%253Cselect%2520class%253D%2522dropdown%2520dropdown-info%2522%253E%250A%2520%2520%2520%2520%253Coption%253Einfo%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%253Elink1%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%253Elink2%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%253Elink3%253C%252Foption%253E%250A%2520%253C%252Fselect%253E%250A%250A%2520%253Cselect%2520class%253D%2522dropdown%2520dropdown-secondary%2522%253E%250A%2520%2520%2520%253Coption%253Esecondary%253C%252Foption%253E%250A%2520%2520%253Coption%253Elink1%253C%252Foption%253E%250A%2520%2520%253Coption%253Elink2%253C%252Foption%253E%250A%2520%2520%253Coption%253Elink3%253C%252Foption%253E%250A%2520%253C%252Fselect%253E%250A%250A%2520%253Cselect%2520class%253D%2522dropdown%2520dropdown-warning%2522%253E%250A%2520%2520%2520%2520%253Coption%253Ewarning%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%253Elink1%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%253Elink2%253C%252Foption%253E%250A%2520%2520%2520%2520%253Coption%253Elink3%253C%252Foption%253E%250A%2520%253C%252Fselect%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Button Links</h2>
+
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-primary-link">Link</button>
+                        <button type="button" class="btn btn-secondary-link">Link</button>
+                        <button type="button" class="btn btn-success-link">Link</button>
+                        <button type="button" class="btn btn-danger-link">Link</button>
+                        <button type="button" class="btn btn-info-link">Link</button>
+                        <button type="button" class="btn btn-warning-link">Link</button>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary-link%2522%253ELink%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary-link%2522%253ELink%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-success-link%2522%253ELink%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-danger-link%2522%253ELink%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-info-link%2522%253ELink%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-warning-link%2522%253ELink%253C%252Fbutton%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Icons Button</h2>
+
+                    <div>
+                        <button type="button" class="btn btn-primary"><i
+                                class="fa fa-eye"></i><span>Show</span></button>
+                        <button type="button" class="btn btn-success"><i
+                                class="fa fa-eye-slash"></i><span>hide</span></button>
+                        <button type="button" class="btn btn-danger"><i
+                                class="fa fa-search"></i><span>Search</span></button>
+                        <button type="button" class="btn btn-secondary"><i
+                                class="fa fa-filter"></i><span>Filter</span></button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-sort"></i><span>Sort</span></button>
+                        <button type="button" class="btn btn-warning"><i
+                                class="fa fa-location-arrow"></i><span>Message</span></button>
+                        <button type="button" class="btn btn-danger"><i
+                                class="fa fa-map-marker"></i><span>location</span></button>
+                        <button type="button" class="btn btn-primary"><i
+                                class="fa fa-shopping-cart"></i><span>Cart</span></button>
+                        <button type="button" class="btn btn-success"><i
+                                class="fa fa-user"></i><span>User</span></button>
+                        <button type="button" class="btn btn-secondary"><i
+                                class="fa fa-phone"></i><span>Contact</span></button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-flag"></i><span>Flag</span></button>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-eye%2522%253E%253C%252Fi%253E%253Cspan%253EShow%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-success%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-eye-slash%2522%253E%253C%252Fi%253E%253Cspan%253Ehide%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-danger%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-search%2522%253E%253C%252Fi%253E%253Cspan%253ESearch%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-filter%2522%253E%253C%252Fi%253E%253Cspan%253EFilter%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-info%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-sort%2522%253E%253C%252Fi%253E%253Cspan%253ESort%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-warning%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-location-arrow%2522%253E%253C%252Fi%253E%253Cspan%253EMessage%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-danger%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-map-marker%2522%253E%253C%252Fi%253E%253Cspan%253Elocation%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253Cspan%253ECart%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-success%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-user%2522%253E%253C%252Fi%253E%253Cspan%253EUser%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-phone%2522%253E%253C%252Fi%253E%253Cspan%253EContact%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-info%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-flag%2522%253E%253C%252Fi%253E%253Cspan%253EFlag%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+            </section>
+            <!-- Buttons -->
+
+            <!-- Responsive image -->
+
+            <section id="image">
+                <div class="code-container">
+                    <h2 class="component-title">Responsive Image</h2>
+                    <img class="img-responsive" src="https://source.unsplash.com/random" />
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522img-responsive%2522%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%2522%2520%252F%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Rounded Image</h2>
+                    <img class="img-responsive rounded" src="https://source.unsplash.com/random" />
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522img-responsive%2520rounded%2522%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%2522%2520%252F%253E%250A"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- Responsive image -->
+
+            <!-- Cards -->
+
+            <section id="cards">
+                <div class="code-container">
+                    <h2 class="component-title">Normal Cards</h2>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="https://bit.ly/2PhzZQg">
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fbit.ly%252F2PhzZQg%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Cards with badges</h2>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <span class="card-badge">new</span>
+                            <img src="https://bit.ly/3eVg30e">
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253Ediscount%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fbit.ly%252F3eVg30e%2522%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Card with dismiss</h2>
+                    <div class="card">
+                        <div class="card-img">
+                            <button class="card-dismiss">x</button>
+                            <img src="https://bit.ly/3eVg30e">
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-dismiss%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fbit.ly%252F3eVg30e%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Cards with overlay</h2>
+                    <div class="card">
+                        <div class="card-img">
+                            <p class="card-overlay text">Make your dreams true</p>
+                            <img src="https://bit.ly/312uCH3">
+                        </div>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-overlay%2520text%2522%253EMake%2520your%2520dreams%2520truee%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fbit.ly%252F312uCH3%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Cards with Only text</h2>
+                    <div class="card card-border">
+                        <div class="card-img">
+                            <img src="https://bit.ly/3f1j6DW">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam
+                            </p>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-border%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fbit.ly%252F3f1j6DW%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECard%2520title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.%2520Dolore%2520nam%2520soluta%252C%2520aspernatur%2520perferendis%2520tenetur%2520sit%2520quam%2520corrupti%2520aliquid%2520assumenda%2520repellat%2520nesciunt%2520officiis%2520exercitationem%2520odit%2520repellendus%2520harum%2520provident%2520inventore%2520in%2520iste.%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Horizontal Cards</h2>
+                    <div class="card-horizontal card-border">
+                        <div class="card-img">
+                            <img src="https://bit.ly/3r6WtjV">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam
+                                soluta, aspernatur perferendis tenetur sit quam corrupti aliquid assumenda </p>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card-horizontal%2520card-border%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fbit.ly%252F3r6WtjV%2522%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECard%2520title%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-content%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.Dolore%2520namsoluta%252C%2520aspernatur%2520perferendis%2520tenetur%2520sit%2520quam%2520corrupti%2520aliquid%2520assumenda%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Cards with Shadow</h2>
+                    <div class="card card-shadow">
+                        <div class="card-img">
+                            <img src="https://bit.ly/3r6WtjV">
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-shadow%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fbit.ly%252F3r6WtjV%2522%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- Cards -->
+
+            <!-- Input -->
+
+            <section id="forms">
+                <div class="code-container">
+                    <h2 class="component-title">Inputs</h2>
+                    <div class="form-group">
+                        <label for="name">Name :</label>
+                        <input type="text" class="form-control" placeholder="Enter name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" class="form-control" placeholder="Enter email" />
+                        <small>We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password :</label>
+                        <input type="password" class="form-control" placeholder="Enter password" />
+                    </div>
+                    <div class="form-group">
+                        <label for="file">upload :</label>
+                        <input type="file" class="form-control" />
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522name%2522%253EName%2520%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-control%2522%2520placeholder%253D%2522Enter%2520name%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEmail%2520%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form-control%2522%2520placeholder%253D%2522Enter%2520email%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Csmall%253EWe%27ll%2520never%2520share%2520your%2520email%2520with%2520anyone%2520else.%253C%252Fsmall%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%2520%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520class%253D%2522form-control%2522%2520placeholder%253D%2522Enter%2520password%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522file%2522%253Eupload%2520%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522file%2522%2520class%253D%2522form-control%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Inputs with valid / invalid messages</h2>
+                    <div class="form-group">
+                        <label for="name">Name :</label>
+                        <div class="form-info">
+                            <i class="fa fa-info-circle form-info-icon"></i>
+                            <input type="text" class="form-control is-invalid" placeholder="Enter name" />
+                        </div>
+                        <p class="invalid-feedback">Please enter a valid name</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <div class="form-info">
+                            <i class="fa fa-info-circle form-info-icon"></i>
+                            <input type="email" class="form-control is-valid" placeholder="Enter email" />
+                        </div>
+                        <small>We'll never share your email with anyone else.</small>
+                        <p class="valid-feedback">correct!</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password :</label>
+                        <div class="form-info">
+                            <i class="fa fa-info-circle form-info-icon"></i>
+                            <input type="password" class="form-control is-invalid" placeholder="Enter password" />
+                        </div>
+                        <p class="invalid-feedback">Please enter a valid password</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="file">upload :</label>
+                        <div class="form-info">
+                            <i class="fa fa-info-circle form-info-icon"></i>
+                            <input type="file" class="form-control is-valid" />
+                        </div>
+                        <p class="valid-feedback">Uploaded successfully</p>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522name%2522%253EName%2520%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-info-circle%2520form-info-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-control%2520is-invalid%2522%2520placeholder%253D%2522Enter%2520name%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522invalid-feedback%2522%253EPlease%2520enter%2520a%2520valid%2520name%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEmail%2520%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-info-circle%2520form-info-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520class%253D%2522form-control%2520is-valid%2522%2520placeholder%253D%2522Enter%2520email%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253EWe%27ll%2520never%2520share%2520your%2520email%2520with%2520anyone%2520else.%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522valid-feedback%2522%253Ecorrect%21%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%2520%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-info-circle%2520form-info-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520class%253D%2522form-control%2520is-invalid%2522%2520placeholder%253D%2522Enter%2520password%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522invalid-feedback%2522%253EPlease%2520enter%2520a%2520valid%2520password%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522file%2522%253Eupload%2520%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-info-circle%2520form-info-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522file%2522%2520class%253D%2522form-control%2520is-valid%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522valid-feedback%2522%253EUploaded%2520successfully%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+            </section>
+
+            <!-- Input -->
+
+            <!-- list -->
+
+            <section id="lists">
+
+                <div class="code-container">
+                    <h2 class="component-title">Stacked List</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Item 1</li>
+                        <li class="list-group-item bg-primary">Item 2</li>
+                        <li class="list-group-item bg-danger">Item 3</li>
+                        <li class="list-group-item bg-success">Item 4</li>
+                        <li class="list-group-item bg-info">Item 5</li>
+                        <li class="list-group-item bg-secondary">Item 6</li>
+                        <li class="list-group-item bg-warning">Item 7</li>
+                    </ul>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-group%2522%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522list-group-item%2522%253EItem%25201%253C%252Fli%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522list-group-item%2520bg-primary%2522%253EItem%25202%253C%252Fli%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522list-group-item%2520bg-danger%2522%253EItem%25203%253C%252Fli%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522list-group-item%2520bg-success%2522%253EItem%25204%253C%252Fli%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522list-group-item%2520bg-info%2522%253EItem%25205%253C%252Fli%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522list-group-item%2520bg-secondary%2522%253EItem%25206%253C%252Fli%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522list-group-item%2520bg-warning%2522%253EItem%25207%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Javascript List</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-action active"><a>Item 1</a></li>
+                        <li class="list-group-item list-group-item-action"><a>Item 2</a></li>
+                        <li class="list-group-item list-group-item-action"><a>Item 3</a></li>
+                        <li class="list-group-item list-group-item-action"><a>Item 4</a></li>
+                    </ul>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-group%2522%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522list-group-item%2520list-group-item-action%2520active%2522%253E%253Ca%253EItem%25201%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522list-group-item%2520list-group-item-action%2522%253E%253Ca%253EItem%25202%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522list-group-item%2520list-group-item-action%2522%253E%253Ca%253EItem%25203%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522list-group-item%2520list-group-item-action%2522%253E%253Ca%253EItem%25204%253C%252Fa%253E%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+            </section>
+
+            <!-- list -->
+
+            <!-- Navigation -->
+
+            <section id="navigation">
+                <div class="code-container">
+                    <h2 class="component-title">Navigation</h2>
+                    <nav class="nav bg-dark">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a class="nav-link text-light">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-light">About</a></li>
+                            <li class="nav-item"><a class="nav-link text-light">Profile</a></li>
+                        </ul>
+                    </nav>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav%2522%253E%250A%2520%2520%2520%253Cul%2520class%253D%2522nav-list%2522%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%253Ca%2520class%253D%2522nav-link%2522%253EHome%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%253Ca%2520class%253D%2522nav-link%2522%253EAbout%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%253Ca%2520class%253D%2522nav-link%2522%253EProfile%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%253C%252Ful%253E%2520%2520%250A%253C%252Fnav%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+
+            <!-- Modal -->
+
+            <section id="modal">
+                <div class="code-container">
+                    <h2 class="component-title">Normal Modal</h2>
+                    <div class="modal-dialog">
+                        <div class="modal-header bg-light">
+                            <h5 class="modal-title">Title</h5>
+                            <button class="modal-dismiss">x</button>
+                        </div>
+                        <div class="modal-body bg-light">
+                            Are you sure you want to cancel?
+                        </div>
+                        <div class="modal-footer bg-light">
+                            <button class="btn btn-danger">Cancel</button>
+                            <button class="btn btn-success">Ok</button>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-dialog%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-header%2520bg-light%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522modal-title%2522%253ETitle%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522modal-dismiss%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-body%2520bg-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Are%2520you%2520sure%2520you%2520want%2520to%2520cancel%253F%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-footer%2520bg-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253ECancel%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253EOk%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <div class="code-container">
+                    <h2>Modal with Theme</h2>
+                    <div class="modal-dialog">
+                        <div class="modal-header bg-dark text-light">
+                            <h5 class="modal-title">Title</h5>
+                            <button class="modal-dismiss">x</button>
+                        </div>
+                        <div class="modal-body bg-dark text-light">
+                            Are you sure you want to cancel?
+                        </div>
+                        <div class="modal-footer bg-dark text-light">
+                            <button class="btn btn-danger">Cancel</button>
+                            <button class="btn btn-success">Ok</button>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522modal-dialog%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-header%2520bg-dark%2520text-light%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%2520class%253D%2522modal-title%2522%253ETitle%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522modal-dismiss%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-body%2520bg-dark%2520text-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520Are%2520you%2520sure%2520you%2520want%2520to%2520cancel%253F%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-footer%2520bg-dark%2520text-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253ECancel%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253EOk%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+
+                </div>
+            </section>
+
+            <!-- Modal -->
+
+            <!-- Ratings -->
+
+            <section id="rating">
+                <div class="code-container">
+                    <h2 class="component-title">Ratings</h2>
+                    <ul class="rating">
+                        <li class="rating-control"><i class="fa fa-star"></i></li>
+                        <li class="rating-control"><i class="fa fa-star"></i></li>
+                        <li class="rating-control"><i class="fa fa-star"></i></li>
+                        <li class="rating-control"><i class="fa fa-star"></i></li>
+                        <li class="rating-control"><i class="fa fa-star"></i></li>
+                        <li class="rating-count">0</li>
+                    </ul>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522rating%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522rating-control%2522%253E%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522rating-control%2522%253E%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522rating-control%2522%253E%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522rating-control%2522%253E%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522rating-control%2522%253E%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522rating-count%2522%253E0%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Show Ratings</h2>
+                    <ul class="show-rating">
+                        <li class="rated">
+                            <div>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>62</span>
+                        </li>
+
+                        <li class="rated">
+                            <div>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>62</span>
+                        </li>
+
+                        <li class="rated">
+                            <div>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>2</span>
+                        </li>
+
+                        <li class="rated">
+                            <div>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>62</span>
+                        </li>
+
+                        <li class="rated">
+                            <div>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>612</span>
+                        </li>
+                    </ul>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522show-rating%2522%253E%250A%2520%2520%2520%253Cli%2520class%253D%2522rated%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%253E62%253C%252Fspan%253E%250A%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%253Cli%2520class%253D%2522rated%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%253E62%253C%252Fspan%253E%250A%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%253Cli%2520class%253D%2522rated%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%253E2%253C%252Fspan%253E%250A%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%253Cli%2520class%253D%2522rated%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%253E62%253C%252Fspan%253E%250A%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%253Cli%2520class%253D%2522rated%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%253E612%253C%252Fspan%253E%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        ;" class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- Ratings -->
+
+            <!-- Grids -->
+
+            <section id="grid">
+                <div class="code-container">
+                    <h2 class="component-title">Grids-2</h2>
+                    <div class="grid-2">
+                        <div class="col">1</div>
+                        <div class="col">2</div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-2%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col%2522%253E1%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col%2522%253E2%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Grids-3</h2>
+                    <div class="grid-3">
+                        <div class="col">1</div>
+                        <div class="col">2</div>
+                        <div class="col">3</div>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-3%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col%2522%253E1%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col%2522%253E2%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col%2522%253E3%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- Grids -->
+
+            <!-- Text Utilities -->
+
+            <section id="text-utilities">
+                <div class="code-container">
+                    <h2 class="component-title">Headings</h2>
+
+                    <h1 class="h1">Heading 1</h1>
+                    <h2 class="h2">Heading 2</h2>
+                    <h3 class="h3">Heading 3</h3>
+                    <h4 class="h4">Heading 4</h4>
+                    <h5 class="h5">Heading 5</h5>
+                    <h6 class="h6">Heading 6</h6>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522h1%2522%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%2520class%253D%2522h2%2522%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%2520class%253D%2522h3%2522%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%2520class%253D%2522h4%2522%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%2520class%253D%2522h5%2522%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%2520class%253D%2522h6%2522%253EHeading%25206%253C%252Fh6%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>small text</h2>
+                    <h1 class="h1">Heading 1 <small>secondary text</small></h1>
+                    <h2 class="h2">Heading 2 <small>secondary text</small></h2>
+                    <h3 class="h3">Heading 3 <small>secondary text</small></h3>
+                    <h4 class="h4">Heading 4 <small>secondary text</small></h4>
+                    <h5 class="h5">Heading 5 <small>secondary text</small></h5>
+                    <h6 class="h6">Heading 6 <small>secondary text</small></h6>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522h1%2522%253EHeading%25201%2520%253Csmall%253Esecondary%2520text%253C%252Fsmall%253E%253C%252Fh1%253E%250A%253Ch2%2520class%253D%2522h2%2522%253EHeading%25202%2520%253Csmall%253Esecondary%2520text%253C%252Fsmall%253E%253C%252Fh2%253E%250A%253Ch3%2520class%253D%2522h3%2522%253EHeading%25203%2520%253Csmall%253Esecondary%2520text%253C%252Fsmall%253E%253C%252Fh3%253E%250A%253Ch4%2520class%253D%2522h4%2522%253EHeading%25204%2520%253Csmall%253Esecondary%2520text%253C%252Fsmall%253E%253C%252Fh4%253E%250A%253Ch5%2520class%253D%2522h5%2522%253EHeading%25205%2520%253Csmall%253Esecondary%2520text%253C%252Fsmall%253E%253C%252Fh5%253E%250A%253Ch6%2520class%253D%2522h6%2522%253EHeading%25206%2520%253Csmall%253Esecondary%2520text%253C%252Fsmall%253E%253C%252Fh6%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Text colors</h2>
+                    <p class="text-primary">Lorem ipsum dolor sit</p>
+                    <p class="text-secondary">Lorem ipsum dolor sit</p>
+                    <p class="text-danger">Lorem ipsum dolor sit</p>
+                    <p class="text-success">Lorem ipsum dolor sit</p>
+                    <p class="text-info">Lorem ipsum dolor sit</p>
+                    <p class="text-dark">Lorem ipsum dolor sit</p>
+                    <p class="text-warning">Lorem ipsum dolor sit</p>
+                    <p class="text-light bg-dark">Lorem ipum dolor sit</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-primary%2522%253ELorem%2520ipsum%2520dolor%2520sit%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-secondary%2522%253ELorem%2520ipsum%2520dolor%2520sit%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-danger%2522%253ELorem%2520ipsum%2520dolor%2520sit%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-success%2522%253ELorem%2520ipsum%2520dolor%2520sit%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-info%2522%253ELorem%2520ipsum%2520dolor%2520sit%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-dark%2522%253ELorem%2520ipsum%2520dolor%2520sit%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-warning%2522%253ELorem%2520ipsum%2520dolor%2520sit%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-light%2520bg-dark%2522%253ELorem%2520ipum%2520dolor%2520sit%253C%252Fp%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2>Text Alignment</h2>
+                    <p class="text-left">left</p>
+                    <p class="text-center">center</p>
+                    <p class="text-right">right</p>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522text-left%2522%253Eleft%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-center%2522%253Ecenter%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-right%2522%253Eright%253C%252Fp%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+            </section>
+
+            <!-- Text Utilities -->
+
+            <!-- Toast/Snackbar -->
+
+            <section id="toast">
+                <div class="code-container">
+                    <h2 class="component-title">Simple Toast</h2>
+
+                    <div class="toast-container">
+                        <div class="toast bg-success toast-1">
+                            <p>Successfully submitted</p>
+                        </div>
+                        <button id="toast-1" class="show-toast btn btn-success">success</button>
+
+                        <div class="toast bg-danger toast-2">
+                            <p>Something went wrong</p>
+                        </div>
+                        <button id="toast-2" class="show-toast btn btn-danger">error</button>
+
+                        <div class="toast bg-warning toast-3">
+                            <p>This is a warning</p>
+                        </div>
+                        <button id="toast-3" class="show-toast btn btn-warning">warning</button>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520bg-success%2520toast-1%2522%253E%250A%2520%2520%253Cp%253ESuccessfully%2520submitted%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cbutton%2520id%253D%2522toast-1%2522%2520class%253D%2522show-toast%2520btn%2520btn-success%2522%253Esuccess%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520bg-danger%2520toast-2%2522%253E%250A%2520%2520%253Cp%253ESomething%2520went%2520wrong%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cbutton%2520id%253D%2522toast-2%2522%2520class%253D%2522show-toast%2520btn%2520btn-danger%2522%253Eerror%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520bg-warning%2520toast-3%2522%253E%250A%2520%253Cp%253EThis%2520is%2520a%2520warning%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253Cbutton%2520id%253D%2522toast-3%2522%2520class%253D%2522show-toast%2520btn%2520btn-warning%2522%253Ewarning%253C%252Fbutton%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <div class="code-container">
+                    <h2> Toast with header and footer </h2>
+                    <div class="toast-container">
+
+                        <div class="toast bg-success toast-4">
+                            <div class="toast-header">
+                                <small>5 min ago</small>
+                            </div>
+                            <div class="toast-footer">
+                                Someone viewed your profile
+                            </div>
+                        </div>
+                        <button id="toast-4" class="show-toast btn btn-success">success</button>
+
+                        <div class="toast bg-danger toast-5">
+                            <div class="toast-header">
+                                <small>15 min ago</small>
+                            </div>
+                            <div class="toast-footer">
+                                You plan has been expired
+                            </div>
+
+                        </div>
+                        <button id="toast-5" class="show-toast btn btn-danger">error</button>
+
+                        <div class="toast bg-warning toast-6">
+                            <div class="toast-header">
+                                <small>10 min ago</small>
+                            </div>
+                            <div class="toast-footer">
+                                Last day to get this item at 999
+                            </div>
+                        </div>
+                        <button id="toast-6" class="show-toast btn btn-warning">warning</button>
+                    </div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%2874%2C118%2C159%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520bg-success%2520toast-4%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-header%2522%253E%250A%2520%2520%2520%2520%2520%253Csmall%253E5%2520min%2520ago%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-footer%2522%253E%250A%2520%2520%2520%2520%2520Someone%2520viewed%2520your%2520profile%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cbutton%2520id%253D%2522toast-4%2522%2520class%253D%2522show-toast%2520btn%2520btn-success%2522%253Esuccess%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520bg-danger%2520toast-5%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522toast-header%2522%253E%250A%2520%2520%2520%2520%2520%253Csmall%253E15%2520min%2520ago%253C%252Fsmall%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522toast-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520You%2520plan%2520has%2520been%2520expired%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cbutton%2520id%253D%2522toast-5%2522%2520class%253D%2522show-toast%2520btn%2520btn-danger%2522%253Eerror%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2520bg-warning%2520toast-6%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522toast-header%2522%253E%250A%2520%2520%2520%2520%2520%253Csmall%253E10%2520min%2520ago%253C%252Fsmall%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522toast-footer%2522%253E%250A%2520%2520%2520%2520%2520Last%2520day%2520to%2520get%2520this%2520item%2520at%2520999%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cbutton%2520id%253D%2522toast-6%2522%2520class%253D%2522show-toast%2520btn%2520btn-warning%2522%253Ewarning%253C%252Fbutton%253E"
+                        " class="iframe-container" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- Toast/Snackbar -->
+
+        </div>
+
+        <footer class="footer">
+            <h3 class="footer-header">Connect with me on social media</h3>
+            <ul class="social-link list-non-bullet">
+                <li class="list-item-inline">
+                    <i class="fab fa-instagram fa-lg"></i>
+                    <a class="link" target="_blank" href="https://www.instagram.com/smit_asmit008/">Instagram</a>
+                </li>
+                <li class="list-item-inline">
+                    <i class="fab fa-github fa-lg"></i>
+                    <a class="link" target="_blank" href="https://github.com/asmitzz">Github</a>
+                </li>
+                <li class="list-item-inline">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                    <a class="link" target="_blank" href="https://www.linkedin.com/in/asmit-shrivastava-3b94a3189/">LinkedIn</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
